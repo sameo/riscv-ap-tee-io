@@ -85,6 +85,12 @@ To fully support IDE, CoVE-IO compatible devices must implement the IDE Key
 Management (IDE_KM) protocol. IDE_KM messages are initiated by the TSM and sent
 over SPDM to the DSM.
 
+The CoVE-IO compatible devices must keep tracking the IDE key invocation field,
+which is the bit 63:0 of the IV. If the IDE key invocation field overflow
+happens, the IDE stream must enter Insecure. Before overflow, the device may
+signal event to the host to let the host software perform key refresh process
+with IDE_KM protocol.
+
 === Host
 
 In order to support TEE-IO devices with the above described capabilities, a
