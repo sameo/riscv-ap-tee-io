@@ -50,7 +50,7 @@ CoVE-IO relies on the TSM to generate and configure the IDE keys for both the
 PCIe physical device and the PCIe root port the device is attached to. For
 setting the device IDE keys up, the TSM must use the IDE Key Management
 (`IDE_KM`) protocol. For the PCIe root port, the TSM must protect the IDE keys
-exchange through e.g. a SPDM session with the platform Root-of-Trust (RoT) DOE
+exchange through e.g. a SPDM session with the platform Root-of-Trust (ROT) DOE
 mailbox, when it supports that mechanism. If the communication between TSM and
 the root port is protected by the platform, the TSM can program the IDE keys
 into the root port directly.

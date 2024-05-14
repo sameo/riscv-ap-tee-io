@@ -81,12 +81,12 @@ domains by controlling the access to the platform MTT and IO-MTT interfaces.
 
 | Root of Trust | ROT | Isolated HW/SW subsystem with an immutable ROM firmware
 and isolated compute and memory elements that form the Trusted Compute Base
-of a TEE system. The RoT manages cryptographic keys and other security
+of a TEE system. The ROT manages cryptographic keys and other security
 critical functions such as system lifecycle and debug authorization.
-The RoT provides trusted services to other software on the platform such
+The ROT provides trusted services to other software on the platform such
 as verified boot, key provisioning and management, security lifecycle
 management, sealed storage, device management, cryptography services,
-attestation, etc. The RoT may be an integrated or discrete element, and may take
+attestation, etc. The ROT may be an integrated or discrete element, and may take
 on the role of a Device Identifier Composition Engine (DICE).
 
 | Supervisor Domain | N/A | A supervisor domain is associated with a set of
